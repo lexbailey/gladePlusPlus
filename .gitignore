@@ -2,3 +2,7 @@
 *.gpp.cpp
 backup/*
 lib/*
+*~
+tests/*
+samTest/*
+gladePlusPlus
