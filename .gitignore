@@ -1,0 +1,4 @@
+*.gpp.hpp
+*.gpp.cpp
+backup/*
+lib/*
