@@ -109,7 +109,7 @@ begin
   for i := 0 to TLItems.Count-1 do begin
           ThisNode := TLItems[i];
           writeln('Top level child ' + inttostr(i) + ' is "' + ThisNode.NodeName + '"');
-          if (ThisNode.NodeName = 'child')then begin
+          if (ThisNode.NodeName = 'child') and (ThisNode.Attributes.GetNamedItem('internal-child') = nil)then begin
             ThisNode := ThisNode.FirstChild;
             if (ThisNode.NodeName = 'object') then begin
               writeln(ThisNode.TextContent);
