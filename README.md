@@ -8,7 +8,7 @@ To compile with lazarus:
  - build with shift+f9
  
 To compile without lazarus (just using fpc)
- - (don't know, never tried)
+ - on a command line, simply tpe `fpc gladePlusPlus.lpr`
  
 To take a glade file and produce headers and sources with a class for each top-level...
 
