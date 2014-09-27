@@ -10,7 +10,7 @@ uses
   Classes, SysUtils, CustApp
   { you can add units after this },
   DOM,
-  XMLRead, templates, unixutil;
+  XMLRead, templates, unixutil, RegExpr, defParser;
 
 type
 
@@ -38,6 +38,7 @@ var
   outputHeader, outputSource, cleanup: TStrings;
   outputFolder, inputFileName, projName : string;
   signalsHeader: TStrings;
+  sigDefs: TDefParser;
 
 function StringIsIn(const s: string; const a: array of string):boolean;
 var  len, i: integer;
@@ -228,10 +229,10 @@ var
   Doc: TXMLDocument;
   i: integer;
   includes, initCode, declareCode: TStringList;
-  thisSignalHeaderName, thisSignalHeaderFileName:string;
+  thisSignalHeaderName, thisSignalHeaderFileName, defsFile:string;
 begin
   // quick check parameters
-  ErrorMsg:=CheckOptions('hiox','help,input,outputFolder,xmlPath');
+  ErrorMsg:=CheckOptions('hioxd','help,input,outputFolder,xmlPath,signalDefsFile');
   if ErrorMsg<>'' then begin
     ShowException(Exception.Create(ErrorMsg));
     Terminate;
@@ -271,6 +272,13 @@ begin
   projName := Basename(inputFileName,'.glade');
   //Generate the name for the main output file name
   mainOutputFileName := outputFolder + projName;
+
+  //Before parsing the glade file, load in the defs file
+  defsFile := 'gtk_signals.defs';
+  if HasOption('d','signalDefsFile') then begin
+    defsFile := GetOptionValue('d','signalDefsFile');
+  end;
+  sigDefs := TDefParser.Create(defsFile);
 
   try
     //Load the glade file

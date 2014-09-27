@@ -32,7 +32,7 @@
         <LaunchingApplication PathPlusParams="/usr/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
       </local>
     </RunParams>
-    <Units Count="2">
+    <Units Count="3">
       <Unit0>
         <Filename Value="gladePlusPlus.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -43,6 +43,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="templates"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="defparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="defParser"/>
+      </Unit2>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
