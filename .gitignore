@@ -6,3 +6,5 @@ lib/*
 tests/*
 samTest/*
 gladePlusPlus
+*.o
+*.ppu

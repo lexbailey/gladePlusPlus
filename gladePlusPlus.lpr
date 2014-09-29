@@ -95,7 +95,7 @@ end;
 function declareSignal(signalHandler, signalArgs: string):string;
 begin
   //Produce a line of C that declares the signature of a signal handler
-  result := format('void %s(%s);', [signalHandler, signalArgs]);
+  result := format(signalArgs, [signalHandler]);
 end;
 
 function connectSignal(objectName, signalName, signalHandler: string):string;
@@ -154,7 +154,8 @@ begin
             //Generate code to connect this signal
             thisTLOutSource.Append(connectSignal(objectName, signalName, signalHandler));
             //Generate a function signiature for the signal handler
-            signalsHeader.Append(declareSignal(signalHandler, ''));
+            //signalsHeader.Append(declareSignal(signalHandler, sigDefs.Signiatures[DashToUnderscore(ObjectClass + '.' + SignalName)]));
+            signalsHeader.Append(declareSignal(signalHandler, sigDefs.Signiatures[DashToUnderscore(SignalName)]));
           end;
         end;
         //Now search this child for all of its children.
@@ -274,11 +275,13 @@ begin
   mainOutputFileName := outputFolder + projName;
 
   //Before parsing the glade file, load in the defs file
-  defsFile := 'gtk_signals.defs';
+  defsFile := 'gtk_signals.xml';
   if HasOption('d','signalDefsFile') then begin
     defsFile := GetOptionValue('d','signalDefsFile');
   end;
+  writeln('loading defs');
   sigDefs := TDefParser.Create(defsFile);
+  writeln('loaded defs');
 
   try
     //Load the glade file

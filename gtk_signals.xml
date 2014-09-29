@@ -1,0 +1,1186 @@
+<gtk-signals>
+<signal name="activate-link" of-object="GtkAboutDialog" return-type="gboolean" when="last">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="accel-activate" of-object="GtkAccelGroup" return-type="gboolean" when="unknown">
+<parameter type="GObject*">p0</parameter>
+<parameter type="guint">p1</parameter>
+<parameter type="GdkModifierType">p2</parameter>
+</signal>
+<signal name="accel-changed" of-object="GtkAccelGroup" return-type="void" when="first">
+<parameter type="guint">p0</parameter>
+<parameter type="GdkModifierType">p1</parameter>
+<parameter type="GClosure*">p2</parameter>
+</signal>
+<signal name="activate" of-object="GtkAction" return-type="void" when="first">
+</signal>
+<signal name="connect-proxy" of-object="GtkActionGroup" return-type="void" when="unknown">
+<parameter type="GtkAction*">p0</parameter>
+<parameter type="GtkWidget*">p1</parameter>
+</signal>
+<signal name="disconnect-proxy" of-object="GtkActionGroup" return-type="void" when="unknown">
+<parameter type="GtkAction*">p0</parameter>
+<parameter type="GtkWidget*">p1</parameter>
+</signal>
+<signal name="pre-activate" of-object="GtkActionGroup" return-type="void" when="unknown">
+<parameter type="GtkAction*">p0</parameter>
+</signal>
+<signal name="post-activate" of-object="GtkActionGroup" return-type="void" when="unknown">
+<parameter type="GtkAction*">p0</parameter>
+</signal>
+<signal name="changed" of-object="GtkAdjustment" return-type="void" when="first">
+</signal>
+<signal name="value-changed" of-object="GtkAdjustment" return-type="void" when="first">
+</signal>
+<signal name="custom-item-activated" of-object="GtkAppChooserButton" return-type="void" when="first">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="populate-popup" of-object="GtkAppChooserWidget" return-type="void" when="first">
+<parameter type="GtkMenu*">p0</parameter>
+<parameter type="GAppInfo*">p1</parameter>
+</signal>
+<signal name="application-selected" of-object="GtkAppChooserWidget" return-type="void" when="first">
+<parameter type="GAppInfo*">p0</parameter>
+</signal>
+<signal name="application-activated" of-object="GtkAppChooserWidget" return-type="void" when="first">
+<parameter type="GAppInfo*">p0</parameter>
+</signal>
+<signal name="window-added" of-object="GtkApplication" return-type="void" when="first">
+<parameter type="GtkWindow*">p0</parameter>
+</signal>
+<signal name="window-removed" of-object="GtkApplication" return-type="void" when="first">
+<parameter type="GtkWindow*">p0</parameter>
+</signal>
+<signal name="cancel" of-object="GtkAssistant" return-type="void" when="last">
+</signal>
+<signal name="close" of-object="GtkAssistant" return-type="void" when="last">
+</signal>
+<signal name="prepare" of-object="GtkAssistant" return-type="void" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="apply" of-object="GtkAssistant" return-type="void" when="last">
+</signal>
+<signal name="escape" of-object="GtkAssistant" return-type="void" when="first">
+</signal>
+<signal name="activate" of-object="GtkButton" return-type="void" when="first">
+</signal>
+<signal name="pressed" of-object="GtkButton" return-type="void" when="first">
+</signal>
+<signal name="released" of-object="GtkButton" return-type="void" when="first">
+</signal>
+<signal name="clicked" of-object="GtkButton" return-type="void" when="first">
+</signal>
+<signal name="enter" of-object="GtkButton" return-type="void" when="first">
+</signal>
+<signal name="leave" of-object="GtkButton" return-type="void" when="first">
+</signal>
+<signal name="month-changed" of-object="GtkCalendar" return-type="void" when="first">
+</signal>
+<signal name="day-selected" of-object="GtkCalendar" return-type="void" when="first">
+</signal>
+<signal name="day-selected-double-click" of-object="GtkCalendar" return-type="void" when="first">
+</signal>
+<signal name="prev-month" of-object="GtkCalendar" return-type="void" when="first">
+</signal>
+<signal name="next-month" of-object="GtkCalendar" return-type="void" when="first">
+</signal>
+<signal name="prev-year" of-object="GtkCalendar" return-type="void" when="first">
+</signal>
+<signal name="next-year" of-object="GtkCalendar" return-type="void" when="first">
+</signal>
+<signal name="toggled" of-object="GtkCheckMenuItem" return-type="void" when="first">
+</signal>
+<signal name="apply-attributes" of-object="GtkCellArea" return-type="void" when="first">
+<parameter type="GtkTreeModel*">p0</parameter>
+<parameter type="GtkTreeIter*">p1</parameter>
+<parameter type="gboolean">p2</parameter>
+<parameter type="gboolean">p3</parameter>
+</signal>
+<signal name="add-editable" of-object="GtkCellArea" return-type="void" when="first">
+<parameter type="GtkCellRenderer*">p0</parameter>
+<parameter type="GtkCellEditable*">p1</parameter>
+<parameter type="GdkRectangle*">p2</parameter>
+<parameter type="const-gchar*">p3</parameter>
+</signal>
+<signal name="remove-editable" of-object="GtkCellArea" return-type="void" when="first">
+<parameter type="GtkCellRenderer*">p0</parameter>
+<parameter type="GtkCellEditable*">p1</parameter>
+</signal>
+<signal name="focus-changed" of-object="GtkCellArea" return-type="void" when="first">
+<parameter type="GtkCellRenderer*">p0</parameter>
+<parameter type="const-gchar*">p1</parameter>
+</signal>
+<signal name="editing-done" of-object="GtkCellEditable" return-type="void" when="last">
+</signal>
+<signal name="remove-widget" of-object="GtkCellEditable" return-type="void" when="last">
+</signal>
+<signal name="editing-canceled" of-object="GtkCellRenderer" return-type="void" when="first">
+</signal>
+<signal name="editing-started" of-object="GtkCellRenderer" return-type="void" when="first">
+<parameter type="GtkCellEditable*">p0</parameter>
+<parameter type="const-gchar*">p1</parameter>
+</signal>
+<signal name="accel-edited" of-object="GtkCellRendererAccel" return-type="void" when="last">
+<parameter type="const-gchar*">p0</parameter>
+<parameter type="guint">p1</parameter>
+<parameter type="GdkModifierType">p2</parameter>
+<parameter type="guint">p3</parameter>
+</signal>
+<signal name="accel-cleared" of-object="GtkCellRendererAccel" return-type="void" when="last">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="changed" of-object="GtkCellRendererCombo" return-type="void" when="last">
+<parameter type="const-gchar*">p0</parameter>
+<parameter type="GtkTreeIter*">p1</parameter>
+</signal>
+<signal name="edited" of-object="GtkCellRendererText" return-type="void" when="last">
+<parameter type="const-gchar*">p0</parameter>
+<parameter type="const-gchar*">p1</parameter>
+</signal>
+<signal name="toggled" of-object="GtkCellRendererToggle" return-type="void" when="last">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="owner-change" of-object="GtkClipboard" return-type="void" when="first">
+<parameter type="GdkEventOwnerChange*">p0</parameter>
+</signal>
+<signal name="color-set" of-object="GtkColorButton" return-type="void" when="first">
+</signal>
+<signal name="color-activated" of-object="GtkColorChooser" return-type="void" when="first">
+<parameter type="const-GdkRGBA*">p0</parameter>
+</signal>
+<signal name="color-changed" of-object="GtkColorSelection" return-type="void" when="first">
+</signal>
+<signal name="changed" of-object="GtkComboBox" return-type="void" when="last">
+</signal>
+<signal name="popup" of-object="GtkComboBox" return-type="void" when="last">
+</signal>
+<signal name="popdown" of-object="GtkComboBox" return-type="gboolean" when="last">
+</signal>
+<signal name="move-active" of-object="GtkComboBox" return-type="void" when="last">
+<parameter type="GtkScrollType">p0</parameter>
+</signal>
+<signal name="format-entry-text" of-object="GtkComboBox" return-type="gchar*" when="last">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="add" of-object="GtkContainer" return-type="void" when="first">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="remove" of-object="GtkContainer" return-type="void" when="first">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="check-resize" of-object="GtkContainer" return-type="void" when="last">
+</signal>
+<signal name="set-focus-child" of-object="GtkContainer" return-type="void" when="first">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="response" of-object="GtkDialog" return-type="void" when="last">
+<parameter type="gint">p0</parameter>
+</signal>
+<signal name="close" of-object="GtkDialog" return-type="void" when="last">
+</signal>
+<signal name="changed" of-object="GtkEditable" return-type="void" when="last">
+</signal>
+<signal name="insert-text" of-object="GtkEditable" return-type="void" when="last">
+<parameter type="const-gchar*">p0</parameter>
+<parameter type="gint">p1</parameter>
+<parameter type="gpointer">p2</parameter>
+</signal>
+<signal name="delete-text" of-object="GtkEditable" return-type="void" when="last">
+<parameter type="gint">p0</parameter>
+<parameter type="gint">p1</parameter>
+</signal>
+<signal name="activate" of-object="GtkEntry" return-type="void" when="last">
+</signal>
+<signal name="move-cursor" of-object="GtkEntry" return-type="void" when="last">
+<parameter type="GtkMovementStep">p0</parameter>
+<parameter type="gint">p1</parameter>
+<parameter type="gboolean">p2</parameter>
+</signal>
+<signal name="insert-at-cursor" of-object="GtkEntry" return-type="void" when="last">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="delete-from-cursor" of-object="GtkEntry" return-type="void" when="last">
+<parameter type="GtkDeleteType">p0</parameter>
+<parameter type="gint">p1</parameter>
+</signal>
+<signal name="backspace" of-object="GtkEntry" return-type="void" when="last">
+</signal>
+<signal name="cut-clipboard" of-object="GtkEntry" return-type="void" when="last">
+</signal>
+<signal name="copy-clipboard" of-object="GtkEntry" return-type="void" when="last">
+</signal>
+<signal name="paste-clipboard" of-object="GtkEntry" return-type="void" when="last">
+</signal>
+<signal name="toggle-overwrite" of-object="GtkEntry" return-type="void" when="last">
+</signal>
+<signal name="populate-popup" of-object="GtkEntry" return-type="void" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="preedit-changed" of-object="GtkEntry" return-type="void" when="last">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="icon-press" of-object="GtkEntry" return-type="void" when="last">
+<parameter type="GtkEntryIconPosition">p0</parameter>
+<parameter type="const-GdkEventButton*">p1</parameter>
+</signal>
+<signal name="icon-release" of-object="GtkEntry" return-type="void" when="last">
+<parameter type="GtkEntryIconPosition">p0</parameter>
+<parameter type="const-GdkEventButton*">p1</parameter>
+</signal>
+<signal name="insert-prefix" of-object="GtkEntryCompletion" return-type="gboolean" when="last">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="match-selected" of-object="GtkEntryCompletion" return-type="gboolean" when="last">
+<parameter type="GtkTreeModel*">p0</parameter>
+<parameter type="GtkTreeIter*">p1</parameter>
+</signal>
+<signal name="cursor-on-match" of-object="GtkEntryCompletion" return-type="gboolean" when="last">
+<parameter type="GtkTreeModel*">p0</parameter>
+<parameter type="GtkTreeIter*">p1</parameter>
+</signal>
+<signal name="no-matches" of-object="GtkEntryCompletion" return-type="void" when="last">
+</signal>
+<signal name="action-activated" of-object="GtkEntryCompletion" return-type="void" when="last">
+<parameter type="gint">p0</parameter>
+</signal>
+<signal name="inserted-text" of-object="GtkEntryBuffer" return-type="void" when="first">
+<parameter type="guint">p0</parameter>
+<parameter type="const-gchar*">p1</parameter>
+<parameter type="guint">p2</parameter>
+</signal>
+<signal name="deleted-text" of-object="GtkEntryBuffer" return-type="void" when="first">
+<parameter type="guint">p0</parameter>
+<parameter type="guint">p1</parameter>
+</signal>
+<signal name="activate" of-object="GtkExpander" return-type="void" when="last">
+</signal>
+<signal name="selection-changed" of-object="GtkFileChooser" return-type="void" when="last">
+</signal>
+<signal name="current-folder-changed" of-object="GtkFileChooser" return-type="void" when="last">
+</signal>
+<signal name="update-preview" of-object="GtkFileChooser" return-type="void" when="last">
+</signal>
+<signal name="file-activated" of-object="GtkFileChooser" return-type="void" when="last">
+</signal>
+<signal name="confirm-overwrite" of-object="GtkFileChooser" return-type="GtkFileChooserConfirmation" when="last">
+</signal>
+<signal name="file-set" of-object="GtkFileChooserButton" return-type="void" when="first">
+</signal>
+<signal name="show-hidden" of-object="GtkFileChooserWidget" return-type="void" when="first">
+</signal>
+<signal name="location-popup" of-object="GtkFileChooserWidget" return-type="void" when="first">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="location-popup-on-paste" of-object="GtkFileChooserWidget" return-type="void" when="first">
+</signal>
+<signal name="location-toggle-popup" of-object="GtkFileChooserWidget" return-type="void" when="first">
+</signal>
+<signal name="up-folder" of-object="GtkFileChooserWidget" return-type="void" when="first">
+</signal>
+<signal name="down-folder" of-object="GtkFileChooserWidget" return-type="void" when="first">
+</signal>
+<signal name="home-folder" of-object="GtkFileChooserWidget" return-type="void" when="first">
+</signal>
+<signal name="desktop-folder" of-object="GtkFileChooserWidget" return-type="void" when="first">
+</signal>
+<signal name="quick-bookmark" of-object="GtkFileChooserWidget" return-type="void" when="first">
+<parameter type="gint">p0</parameter>
+</signal>
+<signal name="search-shortcut" of-object="GtkFileChooserWidget" return-type="void" when="first">
+</signal>
+<signal name="recent-shortcut" of-object="GtkFileChooserWidget" return-type="void" when="first">
+</signal>
+<signal name="move-cursor" of-object="GtkFlowBox" return-type="void" when="last">
+<parameter type="GtkMovementStep">p0</parameter>
+<parameter type="gint">p1</parameter>
+</signal>
+<signal name="select-all" of-object="GtkFlowBox" return-type="void" when="last">
+</signal>
+<signal name="unselect-all" of-object="GtkFlowBox" return-type="void" when="last">
+</signal>
+<signal name="child-activated" of-object="GtkFlowBox" return-type="void" when="last">
+<parameter type="GtkFlowBoxChild*">p0</parameter>
+</signal>
+<signal name="selected-children-changed" of-object="GtkFlowBox" return-type="void" when="first">
+</signal>
+<signal name="activate-cursor-child" of-object="GtkFlowBox" return-type="void" when="last">
+</signal>
+<signal name="toggle-cursor-child" of-object="GtkFlowBox" return-type="void" when="last">
+</signal>
+<signal name="activate" of-object="GtkFlowBoxChild" return-type="void" when="first">
+</signal>
+<signal name="font-set" of-object="GtkFontButton" return-type="void" when="first">
+</signal>
+<signal name="font-activated" of-object="GtkFontChooser" return-type="void" when="first">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="cancel" of-object="GtkGesture" return-type="void" when="last">
+<parameter type="GdkEventSequence*">p0</parameter>
+</signal>
+<signal name="update" of-object="GtkGesture" return-type="void" when="last">
+<parameter type="GdkEventSequence*">p0</parameter>
+</signal>
+<signal name="begin" of-object="GtkGesture" return-type="void" when="last">
+<parameter type="GdkEventSequence*">p0</parameter>
+</signal>
+<signal name="end" of-object="GtkGesture" return-type="void" when="last">
+<parameter type="GdkEventSequence*">p0</parameter>
+</signal>
+<signal name="sequence-state-changed" of-object="GtkGesture" return-type="void" when="last">
+<parameter type="GdkEventSequence*">p0</parameter>
+<parameter type="GtkEventSequenceState">p1</parameter>
+</signal>
+<signal name="drag-begin" of-object="GtkGestureDrag" return-type="void" when="last">
+<parameter type="gdouble">p0</parameter>
+<parameter type="gdouble">p1</parameter>
+</signal>
+<signal name="drag-end" of-object="GtkGestureDrag" return-type="void" when="last">
+<parameter type="gdouble">p0</parameter>
+<parameter type="gdouble">p1</parameter>
+</signal>
+<signal name="drag-update" of-object="GtkGestureDrag" return-type="void" when="last">
+<parameter type="gdouble">p0</parameter>
+<parameter type="gdouble">p1</parameter>
+</signal>
+<signal name="cancelled" of-object="GtkGestureLongPress" return-type="void" when="last">
+</signal>
+<signal name="pressed" of-object="GtkGestureLongPress" return-type="void" when="last">
+<parameter type="gdouble">p0</parameter>
+<parameter type="gdouble">p1</parameter>
+</signal>
+<signal name="pressed" of-object="GtkGestureMultiPress" return-type="void" when="last">
+<parameter type="gint">p0</parameter>
+<parameter type="gdouble">p1</parameter>
+<parameter type="gdouble">p2</parameter>
+</signal>
+<signal name="released" of-object="GtkGestureMultiPress" return-type="void" when="last">
+<parameter type="gint">p0</parameter>
+<parameter type="gdouble">p1</parameter>
+<parameter type="gdouble">p2</parameter>
+</signal>
+<signal name="stopped" of-object="GtkGestureMultiPress" return-type="void" when="last">
+</signal>
+<signal name="pan" of-object="GtkGesturePan" return-type="void" when="last">
+<parameter type="GtkPanDirection">p0</parameter>
+<parameter type="gdouble">p1</parameter>
+</signal>
+<signal name="angle-changed" of-object="GtkGestureRotate" return-type="void" when="first">
+<parameter type="gdouble">p0</parameter>
+<parameter type="gdouble">p1</parameter>
+</signal>
+<signal name="swipe" of-object="GtkGestureSwipe" return-type="void" when="last">
+<parameter type="gdouble">p0</parameter>
+<parameter type="gdouble">p1</parameter>
+</signal>
+<signal name="scale-changed" of-object="GtkGestureZoom" return-type="void" when="first">
+<parameter type="gdouble">p0</parameter>
+</signal>
+<signal name="child-detached" of-object="GtkHandleBox" return-type="void" when="first">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="child-attached" of-object="GtkHandleBox" return-type="void" when="first">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="changed" of-object="GtkIconTheme" return-type="void" when="last">
+</signal>
+<signal name="response" of-object="GtkInfoBar" return-type="void" when="last">
+<parameter type="gint">p0</parameter>
+</signal>
+<signal name="close" of-object="GtkInfoBar" return-type="void" when="last">
+</signal>
+<signal name="move-cursor" of-object="GtkIconView" return-type="gboolean" when="last">
+<parameter type="GtkMovementStep">p0</parameter>
+<parameter type="gint">p1</parameter>
+</signal>
+<signal name="select-all" of-object="GtkIconView" return-type="void" when="last">
+</signal>
+<signal name="unselect-all" of-object="GtkIconView" return-type="void" when="last">
+</signal>
+<signal name="selection-changed" of-object="GtkIconView" return-type="void" when="first">
+</signal>
+<signal name="item-activated" of-object="GtkIconView" return-type="void" when="last">
+<parameter type="GtkTreePath*">p0</parameter>
+</signal>
+<signal name="select-cursor-item" of-object="GtkIconView" return-type="void" when="last">
+</signal>
+<signal name="toggle-cursor-item" of-object="GtkIconView" return-type="void" when="last">
+</signal>
+<signal name="activate-cursor-item" of-object="GtkIconView" return-type="gboolean" when="last">
+</signal>
+<signal name="move-cursor" of-object="GtkLabel" return-type="void" when="last">
+<parameter type="GtkMovementStep">p0</parameter>
+<parameter type="gint">p1</parameter>
+<parameter type="gboolean">p2</parameter>
+</signal>
+<signal name="copy-clipboard" of-object="GtkLabel" return-type="void" when="last">
+</signal>
+<signal name="populate-popup" of-object="GtkLabel" return-type="void" when="last">
+<parameter type="GtkMenu*">p0</parameter>
+</signal>
+<signal name="activate-link" of-object="GtkLabel" return-type="gboolean" when="last">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="activate-current-link" of-object="GtkLabel" return-type="void" when="last">
+</signal>
+<signal name="offset-changed" of-object="GtkLevelBar" return-type="void" when="first">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="activate-link" of-object="GtkLinkButton" return-type="gboolean" when="last">
+</signal>
+<signal name="row-activated" of-object="GtkListBox" return-type="void" when="last">
+<parameter type="GtkListBoxRow*">p0</parameter>
+</signal>
+<signal name="move-cursor" of-object="GtkListBox" return-type="void" when="last">
+<parameter type="GtkMovementStep">p0</parameter>
+<parameter type="gint">p1</parameter>
+</signal>
+<signal name="select-all" of-object="GtkListBox" return-type="void" when="last">
+</signal>
+<signal name="unselect-all" of-object="GtkListBox" return-type="void" when="last">
+</signal>
+<signal name="toggle-cursor-row" of-object="GtkListBox" return-type="void" when="last">
+</signal>
+<signal name="row-selected" of-object="GtkListBox" return-type="void" when="last">
+<parameter type="GtkListBoxRow*">p0</parameter>
+</signal>
+<signal name="selected-rows-changed" of-object="GtkListBox" return-type="void" when="first">
+</signal>
+<signal name="activate-cursor-row" of-object="GtkListBox" return-type="void" when="last">
+</signal>
+<signal name="activate" of-object="GtkListBoxRow" return-type="void" when="first">
+</signal>
+<signal name="move-scroll" of-object="GtkMenu" return-type="void" when="last">
+<parameter type="GtkScrollType">p0</parameter>
+</signal>
+<signal name="activate" of-object="GtkMenuItem" return-type="void" when="first">
+</signal>
+<signal name="activate-item" of-object="GtkMenuItem" return-type="void" when="first">
+</signal>
+<signal name="toggle-size-request" of-object="GtkMenuItem" return-type="void" when="first">
+<parameter type="int*">p0</parameter>
+</signal>
+<signal name="toggle-size-allocate" of-object="GtkMenuItem" return-type="void" when="first">
+<parameter type="gint">p0</parameter>
+</signal>
+<signal name="select" of-object="GtkMenuItem" return-type="void" when="first">
+</signal>
+<signal name="deselect" of-object="GtkMenuItem" return-type="void" when="first">
+</signal>
+<signal name="deactivate" of-object="GtkMenuShell" return-type="void" when="first">
+</signal>
+<signal name="selection-done" of-object="GtkMenuShell" return-type="void" when="first">
+</signal>
+<signal name="move-current" of-object="GtkMenuShell" return-type="void" when="last">
+<parameter type="GtkMenuDirectionType">p0</parameter>
+</signal>
+<signal name="activate-current" of-object="GtkMenuShell" return-type="void" when="last">
+<parameter type="gboolean">p0</parameter>
+</signal>
+<signal name="cancel" of-object="GtkMenuShell" return-type="void" when="last">
+</signal>
+<signal name="cycle-focus" of-object="GtkMenuShell" return-type="void" when="last">
+<parameter type="GtkDirectionType">p0</parameter>
+</signal>
+<signal name="move-selected" of-object="GtkMenuShell" return-type="gboolean" when="last">
+<parameter type="gint">p0</parameter>
+</signal>
+<signal name="insert" of-object="GtkMenuShell" return-type="void" when="first">
+<parameter type="GtkWidget*">p0</parameter>
+<parameter type="gint">p1</parameter>
+</signal>
+<signal name="show-menu" of-object="GtkMenuToolButton" return-type="void" when="first">
+</signal>
+<signal name="switch-page" of-object="GtkNotebook" return-type="void" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+<parameter type="guint">p1</parameter>
+</signal>
+<signal name="focus-tab" of-object="GtkNotebook" return-type="gboolean" when="last">
+<parameter type="GtkNotebookTab">p0</parameter>
+</signal>
+<signal name="select-page" of-object="GtkNotebook" return-type="gboolean" when="last">
+<parameter type="gboolean">p0</parameter>
+</signal>
+<signal name="change-current-page" of-object="GtkNotebook" return-type="gboolean" when="last">
+<parameter type="gint">p0</parameter>
+</signal>
+<signal name="move-focus-out" of-object="GtkNotebook" return-type="void" when="last">
+<parameter type="GtkDirectionType">p0</parameter>
+</signal>
+<signal name="reorder-tab" of-object="GtkNotebook" return-type="gboolean" when="last">
+<parameter type="GtkDirectionType">p0</parameter>
+<parameter type="gboolean">p1</parameter>
+</signal>
+<signal name="page-reordered" of-object="GtkNotebook" return-type="void" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+<parameter type="guint">p1</parameter>
+</signal>
+<signal name="page-removed" of-object="GtkNotebook" return-type="void" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+<parameter type="guint">p1</parameter>
+</signal>
+<signal name="page-added" of-object="GtkNotebook" return-type="void" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+<parameter type="guint">p1</parameter>
+</signal>
+<signal name="create-window" of-object="GtkNotebook" return-type="GtkNotebook*" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+<parameter type="gint">p1</parameter>
+<parameter type="gint">p2</parameter>
+</signal>
+<signal name="get-child-position" of-object="GtkOverlay" return-type="gboolean" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+<parameter type="GdkRectangle*">p1</parameter>
+</signal>
+<signal name="cycle-child-focus" of-object="GtkPaned" return-type="gboolean" when="last">
+<parameter type="gboolean">p0</parameter>
+</signal>
+<signal name="toggle-handle-focus" of-object="GtkPaned" return-type="gboolean" when="last">
+</signal>
+<signal name="move-handle" of-object="GtkPaned" return-type="gboolean" when="last">
+<parameter type="GtkScrollType">p0</parameter>
+</signal>
+<signal name="cycle-handle-focus" of-object="GtkPaned" return-type="gboolean" when="last">
+<parameter type="gboolean">p0</parameter>
+</signal>
+<signal name="accept-position" of-object="GtkPaned" return-type="gboolean" when="last">
+</signal>
+<signal name="cancel-position" of-object="GtkPaned" return-type="gboolean" when="last">
+</signal>
+<signal name="populate-popup" of-object="GtkPlacesSidebar" return-type="void" when="first">
+<parameter type="GtkMenu*">p0</parameter>
+<parameter type="GFile*">p1</parameter>
+<parameter type="GVolume*">p2</parameter>
+</signal>
+<signal name="open-location" of-object="GtkPlacesSidebar" return-type="void" when="first">
+<parameter type="GFile*">p0</parameter>
+<parameter type="GtkPlacesOpenFlags">p1</parameter>
+</signal>
+<signal name="show-error-message" of-object="GtkPlacesSidebar" return-type="void" when="first">
+<parameter type="const-gchar*">p0</parameter>
+<parameter type="const-gchar*">p1</parameter>
+</signal>
+<signal name="show-connect-to-server" of-object="GtkPlacesSidebar" return-type="void" when="first">
+</signal>
+<signal name="show-enter-location" of-object="GtkPlacesSidebar" return-type="void" when="first">
+</signal>
+<signal name="drag-action-requested" of-object="GtkPlacesSidebar" return-type="gint" when="last">
+<parameter type="GdkDragContext*">p0</parameter>
+<parameter type="GFile*">p1</parameter>
+<parameter type="GList*">p2</parameter>
+</signal>
+<signal name="drag-action-ask" of-object="GtkPlacesSidebar" return-type="gint" when="last">
+<parameter type="gint">p0</parameter>
+</signal>
+<signal name="drag-perform-drop" of-object="GtkPlacesSidebar" return-type="void" when="first">
+<parameter type="GFile*">p0</parameter>
+<parameter type="GList*">p1</parameter>
+<parameter type="gint">p2</parameter>
+</signal>
+<signal name="embedded" of-object="GtkPlug" return-type="void" when="last">
+</signal>
+<signal name="closed" of-object="GtkPopover" return-type="void" when="last">
+</signal>
+<signal name="details-acquired" of-object="GtkPrinter" return-type="void" when="last">
+<parameter type="gboolean">p0</parameter>
+</signal>
+<signal name="status-changed" of-object="GtkPrintJob" return-type="void" when="last">
+</signal>
+<signal name="done" of-object="GtkPrintOperation" return-type="void" when="last">
+<parameter type="GtkPrintOperationResult">p0</parameter>
+</signal>
+<signal name="begin-print" of-object="GtkPrintOperation" return-type="void" when="last">
+<parameter type="GtkPrintContext*">p0</parameter>
+</signal>
+<signal name="paginate" of-object="GtkPrintOperation" return-type="gboolean" when="last">
+<parameter type="GtkPrintContext*">p0</parameter>
+</signal>
+<signal name="request-page-setup" of-object="GtkPrintOperation" return-type="void" when="last">
+<parameter type="GtkPrintContext*">p0</parameter>
+<parameter type="gint">p1</parameter>
+<parameter type="GtkPageSetup*">p2</parameter>
+</signal>
+<signal name="draw-page" of-object="GtkPrintOperation" return-type="void" when="last">
+<parameter type="GtkPrintContext*">p0</parameter>
+<parameter type="gint">p1</parameter>
+</signal>
+<signal name="end-print" of-object="GtkPrintOperation" return-type="void" when="last">
+<parameter type="GtkPrintContext*">p0</parameter>
+</signal>
+<signal name="status-changed" of-object="GtkPrintOperation" return-type="void" when="last">
+</signal>
+<signal name="create-custom-widget" of-object="GtkPrintOperation" return-type="GtkWidget*" when="last">
+</signal>
+<signal name="update-custom-widget" of-object="GtkPrintOperation" return-type="void" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+<parameter type="GtkPageSetup*">p1</parameter>
+<parameter type="GtkPrintSettings*">p2</parameter>
+</signal>
+<signal name="custom-widget-apply" of-object="GtkPrintOperation" return-type="void" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="preview" of-object="GtkPrintOperation" return-type="gboolean" when="last">
+<parameter type="GtkPrintOperationPreview*">p0</parameter>
+<parameter type="GtkPrintContext*">p1</parameter>
+<parameter type="GtkWindow*">p2</parameter>
+</signal>
+<signal name="ready" of-object="GtkPrintOperationPreview" return-type="void" when="last">
+<parameter type="GtkPrintContext*">p0</parameter>
+</signal>
+<signal name="got-page-size" of-object="GtkPrintOperationPreview" return-type="void" when="last">
+<parameter type="GtkPrintContext*">p0</parameter>
+<parameter type="GtkPageSetup*">p1</parameter>
+</signal>
+<signal name="ready" of-object="GtkPrintOperationPreview" return-type="void" when="last">
+<parameter type="GtkPrintContext*">p0</parameter>
+</signal>
+<signal name="got-page-size" of-object="GtkPrintOperationPreview" return-type="void" when="last">
+<parameter type="GtkPrintContext*">p0</parameter>
+<parameter type="GtkPageSetup*">p1</parameter>
+</signal>
+<signal name="group-changed" of-object="GtkRadioButton" return-type="void" when="first">
+</signal>
+<signal name="changed" of-object="GtkRadioAction" return-type="void" when="first">
+<parameter type="GtkRadioAction*">p0</parameter>
+</signal>
+<signal name="group-changed" of-object="GtkRadioMenuItem" return-type="void" when="first">
+</signal>
+<signal name="value-changed" of-object="GtkRange" return-type="void" when="last">
+</signal>
+<signal name="change-value" of-object="GtkRange" return-type="gboolean" when="last">
+<parameter type="GtkScrollType">p0</parameter>
+<parameter type="gdouble">p1</parameter>
+</signal>
+<signal name="adjust-bounds" of-object="GtkRange" return-type="void" when="last">
+<parameter type="gdouble">p0</parameter>
+</signal>
+<signal name="move-slider" of-object="GtkRange" return-type="void" when="last">
+<parameter type="GtkScrollType">p0</parameter>
+</signal>
+<signal name="selection-changed" of-object="GtkRecentChooser" return-type="void" when="last">
+</signal>
+<signal name="item-activated" of-object="GtkRecentChooser" return-type="void" when="last">
+</signal>
+<signal name="changed" of-object="GtkRecentManager" return-type="void" when="first">
+</signal>
+<signal name="format-value" of-object="GtkScale" return-type="gchar*" when="last">
+<parameter type="gdouble">p0</parameter>
+</signal>
+<signal name="popup" of-object="GtkScaleButton" return-type="void" when="last">
+</signal>
+<signal name="value-changed" of-object="GtkScaleButton" return-type="void" when="last">
+<parameter type="gdouble">p0</parameter>
+</signal>
+<signal name="popdown" of-object="GtkScaleButton" return-type="void" when="last">
+</signal>
+<signal name="move-focus-out" of-object="GtkScrolledWindow" return-type="void" when="last">
+<parameter type="GtkDirectionType">p0</parameter>
+</signal>
+<signal name="scroll-child" of-object="GtkScrolledWindow" return-type="gboolean" when="last">
+<parameter type="GtkScrollType">p0</parameter>
+<parameter type="gboolean">p1</parameter>
+</signal>
+<signal name="search-changed" of-object="GtkSearchEntry" return-type="void" when="last">
+</signal>
+<signal name="plug-added" of-object="GtkSocket" return-type="void" when="last">
+</signal>
+<signal name="plug-removed" of-object="GtkSocket" return-type="gboolean" when="last">
+</signal>
+<signal name="value-changed" of-object="GtkSpinButton" return-type="void" when="last">
+</signal>
+<signal name="input" of-object="GtkSpinButton" return-type="gint" when="last">
+<parameter type="double*">p0</parameter>
+</signal>
+<signal name="output" of-object="GtkSpinButton" return-type="gboolean" when="last">
+</signal>
+<signal name="wrapped" of-object="GtkSpinButton" return-type="void" when="last">
+</signal>
+<signal name="change-value" of-object="GtkSpinButton" return-type="void" when="last">
+<parameter type="GtkScrollType">p0</parameter>
+</signal>
+<signal name="text-pushed" of-object="GtkStatusbar" return-type="void" when="last">
+<parameter type="guint">p0</parameter>
+<parameter type="const-gchar*">p1</parameter>
+</signal>
+<signal name="text-popped" of-object="GtkStatusbar" return-type="void" when="last">
+<parameter type="guint">p0</parameter>
+<parameter type="const-gchar*">p1</parameter>
+</signal>
+<signal name="button-press-event" of-object="GtkStatusIcon" return-type="gboolean" when="last">
+<parameter type="GdkEventButton*">p0</parameter>
+</signal>
+<signal name="button-release-event" of-object="GtkStatusIcon" return-type="gboolean" when="last">
+<parameter type="GdkEventButton*">p0</parameter>
+</signal>
+<signal name="scroll-event" of-object="GtkStatusIcon" return-type="gboolean" when="last">
+<parameter type="GdkEventScroll*">p0</parameter>
+</signal>
+<signal name="query-tooltip" of-object="GtkStatusIcon" return-type="gboolean" when="last">
+<parameter type="gint">p0</parameter>
+<parameter type="gint">p1</parameter>
+<parameter type="gboolean">p2</parameter>
+<parameter type="GtkTooltip*">p3</parameter>
+</signal>
+<signal name="popup-menu" of-object="GtkStatusIcon" return-type="void" when="first">
+<parameter type="guint">p0</parameter>
+<parameter type="guint32">p1</parameter>
+</signal>
+<signal name="activate" of-object="GtkStatusIcon" return-type="void" when="first">
+</signal>
+<signal name="size-changed" of-object="GtkStatusIcon" return-type="gboolean" when="last">
+<parameter type="gint">p0</parameter>
+</signal>
+<signal name="changed" of-object="GtkStyleContext" return-type="void" when="first">
+</signal>
+<signal name="activate" of-object="GtkSwitch" return-type="void" when="first">
+</signal>
+<signal name="state-set" of-object="GtkSwitch" return-type="gboolean" when="last">
+<parameter type="gboolean">p0</parameter>
+</signal>
+<signal name="toggled" of-object="GtkToggleButton" return-type="void" when="first">
+</signal>
+<signal name="orientation-changed" of-object="GtkToolbar" return-type="void" when="first">
+<parameter type="GtkOrientation">p0</parameter>
+</signal>
+<signal name="style-changed" of-object="GtkToolbar" return-type="void" when="first">
+<parameter type="GtkToolbarStyle">p0</parameter>
+</signal>
+<signal name="popup-context-menu" of-object="GtkToolbar" return-type="gboolean" when="last">
+<parameter type="gint">p0</parameter>
+<parameter type="gint">p1</parameter>
+<parameter type="gint">p2</parameter>
+</signal>
+<signal name="focus-home-or-end" of-object="GtkToolbar" return-type="gboolean" when="last">
+<parameter type="gboolean">p0</parameter>
+</signal>
+<signal name="create-menu-proxy" of-object="GtkToolItem" return-type="gboolean" when="last">
+</signal>
+<signal name="toolbar-reconfigured" of-object="GtkToolItem" return-type="void" when="last">
+</signal>
+<signal name="clicked" of-object="GtkToolButton" return-type="void" when="first">
+</signal>
+<signal name="changed" of-object="GtkTextBuffer" return-type="void" when="last">
+</signal>
+<signal name="insert-text" of-object="GtkTextBuffer" return-type="void" when="last">
+<parameter type="GtkTextIter*">p0</parameter>
+<parameter type="const-gchar*">p1</parameter>
+<parameter type="gint">p2</parameter>
+</signal>
+<signal name="insert-pixbuf" of-object="GtkTextBuffer" return-type="void" when="last">
+<parameter type="GtkTextIter*">p0</parameter>
+<parameter type="GdkPixbuf*">p1</parameter>
+</signal>
+<signal name="insert-child-anchor" of-object="GtkTextBuffer" return-type="void" when="last">
+<parameter type="GtkTextIter*">p0</parameter>
+<parameter type="GtkTextChildAnchor*">p1</parameter>
+</signal>
+<signal name="delete-range" of-object="GtkTextBuffer" return-type="void" when="last">
+<parameter type="GtkTextIter*">p0</parameter>
+<parameter type="GtkTextIter*">p1</parameter>
+</signal>
+<signal name="modified-changed" of-object="GtkTextBuffer" return-type="void" when="last">
+</signal>
+<signal name="mark-set" of-object="GtkTextBuffer" return-type="void" when="last">
+<parameter type="const-GtkTextIter*">p0</parameter>
+<parameter type="GtkTextMark*">p1</parameter>
+</signal>
+<signal name="mark-deleted" of-object="GtkTextBuffer" return-type="void" when="last">
+<parameter type="GtkTextMark*">p0</parameter>
+</signal>
+<signal name="apply-tag" of-object="GtkTextBuffer" return-type="void" when="last">
+<parameter type="GtkTextTag*">p0</parameter>
+<parameter type="const-GtkTextIter*">p1</parameter>
+<parameter type="const-GtkTextIter*">p2</parameter>
+</signal>
+<signal name="remove-tag" of-object="GtkTextBuffer" return-type="void" when="last">
+<parameter type="GtkTextTag*">p0</parameter>
+<parameter type="const-GtkTextIter*">p1</parameter>
+<parameter type="const-GtkTextIter*">p2</parameter>
+</signal>
+<signal name="begin-user-action" of-object="GtkTextBuffer" return-type="void" when="last">
+</signal>
+<signal name="end-user-action" of-object="GtkTextBuffer" return-type="void" when="last">
+</signal>
+<signal name="paste-done" of-object="GtkTextBuffer" return-type="void" when="last">
+<parameter type="GtkClipboard*">p0</parameter>
+</signal>
+<signal name="event" of-object="GtkTextTag" return-type="gboolean" when="last">
+<parameter type="GObject*">p0</parameter>
+<parameter type="GdkEvent*">p1</parameter>
+<parameter type="const-GtkTextIter*">p2</parameter>
+</signal>
+<signal name="tag-changed" of-object="GtkTextTagTable" return-type="void" when="last">
+<parameter type="GtkTextTag*">p0</parameter>
+<parameter type="gboolean">p1</parameter>
+</signal>
+<signal name="tag-added" of-object="GtkTextTagTable" return-type="void" when="last">
+<parameter type="GtkTextTag*">p0</parameter>
+</signal>
+<signal name="tag-removed" of-object="GtkTextTagTable" return-type="void" when="last">
+<parameter type="GtkTextTag*">p0</parameter>
+</signal>
+<signal name="move-cursor" of-object="GtkTextView" return-type="void" when="last">
+<parameter type="GtkMovementStep">p0</parameter>
+<parameter type="gint">p1</parameter>
+<parameter type="gboolean">p2</parameter>
+</signal>
+<signal name="select-all" of-object="GtkTextView" return-type="void" when="last">
+<parameter type="gboolean">p0</parameter>
+</signal>
+<signal name="move-viewport" of-object="GtkTextView" return-type="void" when="last">
+<parameter type="GtkScrollStep">p0</parameter>
+<parameter type="gint">p1</parameter>
+</signal>
+<signal name="set-anchor" of-object="GtkTextView" return-type="void" when="last">
+</signal>
+<signal name="insert-at-cursor" of-object="GtkTextView" return-type="void" when="last">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="delete-from-cursor" of-object="GtkTextView" return-type="void" when="last">
+<parameter type="GtkDeleteType">p0</parameter>
+<parameter type="gint">p1</parameter>
+</signal>
+<signal name="backspace" of-object="GtkTextView" return-type="void" when="last">
+</signal>
+<signal name="cut-clipboard" of-object="GtkTextView" return-type="void" when="last">
+</signal>
+<signal name="copy-clipboard" of-object="GtkTextView" return-type="void" when="last">
+</signal>
+<signal name="paste-clipboard" of-object="GtkTextView" return-type="void" when="last">
+</signal>
+<signal name="toggle-overwrite" of-object="GtkTextView" return-type="void" when="last">
+</signal>
+<signal name="populate-popup" of-object="GtkTextView" return-type="void" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="toggle-cursor-visible" of-object="GtkTextView" return-type="void" when="last">
+</signal>
+<signal name="preedit-changed" of-object="GtkTextView" return-type="void" when="last">
+<parameter type="const-gchar*">p0</parameter>
+</signal>
+<signal name="toggled" of-object="GtkToggleAction" return-type="void" when="first">
+</signal>
+<signal name="toggled" of-object="GtkToggleToolButton" return-type="void" when="first">
+</signal>
+<signal name="changed" of-object="GtkTreeSelection" return-type="void" when="first">
+</signal>
+<signal name="row-changed" of-object="GtkTreeModel" return-type="void" when="last">
+<parameter type="GtkTreePath*">p0</parameter>
+<parameter type="GtkTreeIter*">p1</parameter>
+</signal>
+<signal name="row-inserted" of-object="GtkTreeModel" return-type="void" when="first">
+<parameter type="GtkTreePath*">p0</parameter>
+<parameter type="GtkTreeIter*">p1</parameter>
+</signal>
+<signal name="row-has-child-toggled" of-object="GtkTreeModel" return-type="void" when="last">
+<parameter type="GtkTreePath*">p0</parameter>
+<parameter type="GtkTreeIter*">p1</parameter>
+</signal>
+<signal name="row-deleted" of-object="GtkTreeModel" return-type="void" when="first">
+<parameter type="GtkTreePath*">p0</parameter>
+</signal>
+<signal name="rows-reordered" of-object="GtkTreeModel" return-type="void" when="first">
+<parameter type="GtkTreePath*">p0</parameter>
+<parameter type="GtkTreeIter*">p1</parameter>
+<parameter type="gint*">p2</parameter>
+</signal>
+<signal name="changed" of-object="GtkTreeSelection" return-type="void" when="first">
+</signal>
+<signal name="sort-column-changed" of-object="GtkTreeSortable" return-type="void" when="last">
+</signal>
+<signal name="row-activated" of-object="GtkTreeView" return-type="void" when="last">
+<parameter type="GtkTreePath*">p0</parameter>
+<parameter type="GtkTreeViewColumn*">p1</parameter>
+</signal>
+<signal name="test-expand-row" of-object="GtkTreeView" return-type="gboolean" when="last">
+<parameter type="GtkTreeIter*">p0</parameter>
+<parameter type="GtkTreePath*">p1</parameter>
+</signal>
+<signal name="test-collapse-row" of-object="GtkTreeView" return-type="gboolean" when="last">
+<parameter type="GtkTreeIter*">p0</parameter>
+<parameter type="GtkTreePath*">p1</parameter>
+</signal>
+<signal name="row-expanded" of-object="GtkTreeView" return-type="void" when="last">
+<parameter type="GtkTreeIter*">p0</parameter>
+<parameter type="GtkTreePath*">p1</parameter>
+</signal>
+<signal name="row-collapsed" of-object="GtkTreeView" return-type="void" when="last">
+<parameter type="GtkTreeIter*">p0</parameter>
+<parameter type="GtkTreePath*">p1</parameter>
+</signal>
+<signal name="columns-changed" of-object="GtkTreeView" return-type="void" when="last">
+</signal>
+<signal name="cursor-changed" of-object="GtkTreeView" return-type="void" when="last">
+</signal>
+<signal name="move-cursor" of-object="GtkTreeView" return-type="gboolean" when="last">
+<parameter type="GtkMovementStep">p0</parameter>
+<parameter type="gint">p1</parameter>
+</signal>
+<signal name="select-all" of-object="GtkTreeView" return-type="gboolean" when="last">
+</signal>
+<signal name="unselect-all" of-object="GtkTreeView" return-type="gboolean" when="last">
+</signal>
+<signal name="select-cursor-row" of-object="GtkTreeView" return-type="gboolean" when="last">
+<parameter type="gboolean">p0</parameter>
+</signal>
+<signal name="toggle-cursor-row" of-object="GtkTreeView" return-type="gboolean" when="last">
+</signal>
+<signal name="expand-collapse-cursor-row" of-object="GtkTreeView" return-type="gboolean" when="last">
+<parameter type="gboolean">p0</parameter>
+<parameter type="gboolean">p1</parameter>
+<parameter type="gboolean">p2</parameter>
+</signal>
+<signal name="select-cursor-parent" of-object="GtkTreeView" return-type="gboolean" when="last">
+</signal>
+<signal name="start-interactive-search" of-object="GtkTreeView" return-type="gboolean" when="last">
+</signal>
+<signal name="clicked" of-object="GtkTreeViewColumn" return-type="void" when="last">
+</signal>
+<signal name="add-widget" of-object="GtkUIManager" return-type="void" when="first">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="actions-changed" of-object="GtkUIManager" return-type="void" when="first">
+</signal>
+<signal name="connect-proxy" of-object="GtkUIManager" return-type="void" when="first">
+<parameter type="GtkAction*">p0</parameter>
+<parameter type="GtkWidget*">p1</parameter>
+</signal>
+<signal name="disconnect-proxy" of-object="GtkUIManager" return-type="void" when="first">
+<parameter type="GtkAction*">p0</parameter>
+<parameter type="GtkWidget*">p1</parameter>
+</signal>
+<signal name="pre-activate" of-object="GtkUIManager" return-type="void" when="first">
+<parameter type="GtkAction*">p0</parameter>
+</signal>
+<signal name="post-activate" of-object="GtkUIManager" return-type="void" when="first">
+<parameter type="GtkAction*">p0</parameter>
+</signal>
+<signal name="destroy" of-object="GtkWidget" return-type="void" when="unknown">
+</signal>
+<signal name="show" of-object="GtkWidget" return-type="void" when="first">
+</signal>
+<signal name="hide" of-object="GtkWidget" return-type="void" when="first">
+</signal>
+<signal name="map" of-object="GtkWidget" return-type="void" when="first">
+</signal>
+<signal name="unmap" of-object="GtkWidget" return-type="void" when="first">
+</signal>
+<signal name="realize" of-object="GtkWidget" return-type="void" when="first">
+</signal>
+<signal name="unrealize" of-object="GtkWidget" return-type="void" when="last">
+</signal>
+<signal name="size-allocate" of-object="GtkWidget" return-type="void" when="first">
+<parameter type="GdkRectangle*">p0</parameter>
+</signal>
+<signal name="state-changed" of-object="GtkWidget" return-type="void" when="first">
+<parameter type="GtkStateType">p0</parameter>
+</signal>
+<signal name="state-flags-changed" of-object="GtkWidget" return-type="void" when="first">
+<parameter type="GtkStateFlags">p0</parameter>
+</signal>
+<signal name="parent-set" of-object="GtkWidget" return-type="void" when="first">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="hierarchy-changed" of-object="GtkWidget" return-type="void" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="style-set" of-object="GtkWidget" return-type="void" when="first">
+<parameter type="GtkStyle*">p0</parameter>
+</signal>
+<signal name="style-updated" of-object="GtkWidget" return-type="void" when="first">
+</signal>
+<signal name="direction-changed" of-object="GtkWidget" return-type="void" when="first">
+<parameter type="GtkTextDirection">p0</parameter>
+</signal>
+<signal name="grab-notify" of-object="GtkWidget" return-type="void" when="first">
+<parameter type="gboolean">p0</parameter>
+</signal>
+<signal name="child-notify" of-object="GtkWidget" return-type="void" when="first">
+<parameter type="GParamSpec*">p0</parameter>
+</signal>
+<signal name="draw" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="cairo_t*">p0</parameter>
+</signal>
+<signal name="mnemonic-activate" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="gboolean">p0</parameter>
+</signal>
+<signal name="grab-focus" of-object="GtkWidget" return-type="void" when="last">
+</signal>
+<signal name="focus" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GtkDirectionType">p0</parameter>
+</signal>
+<signal name="move-focus" of-object="GtkWidget" return-type="void" when="last">
+<parameter type="GtkDirectionType">p0</parameter>
+</signal>
+<signal name="keynav-failed" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GtkDirectionType">p0</parameter>
+</signal>
+<signal name="event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEvent*">p0</parameter>
+</signal>
+<signal name="event-after" of-object="GtkWidget" return-type="void" when="unknown">
+<parameter type="GdkEvent*">p0</parameter>
+</signal>
+<signal name="button-press-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventButton*">p0</parameter>
+</signal>
+<signal name="button-release-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventButton*">p0</parameter>
+</signal>
+<signal name="touch-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventTouch*">p0</parameter>
+</signal>
+<signal name="scroll-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventScroll*">p0</parameter>
+</signal>
+<signal name="motion-notify-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventMotion*">p0</parameter>
+</signal>
+<signal name="composited-changed" of-object="GtkWidget" return-type="void" when="last">
+</signal>
+<signal name="delete-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventAny*">p0</parameter>
+</signal>
+<signal name="destroy-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventAny*">p0</parameter>
+</signal>
+<signal name="key-press-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventKey*">p0</parameter>
+</signal>
+<signal name="key-release-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventKey*">p0</parameter>
+</signal>
+<signal name="enter-notify-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventCrossing*">p0</parameter>
+</signal>
+<signal name="leave-notify-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventCrossing*">p0</parameter>
+</signal>
+<signal name="configure-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventConfigure*">p0</parameter>
+</signal>
+<signal name="focus-in-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventFocus*">p0</parameter>
+</signal>
+<signal name="focus-out-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventFocus*">p0</parameter>
+</signal>
+<signal name="map-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventAny*">p0</parameter>
+</signal>
+<signal name="unmap-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventAny*">p0</parameter>
+</signal>
+<signal name="property-notify-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventProperty*">p0</parameter>
+</signal>
+<signal name="selection-clear-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventSelection*">p0</parameter>
+</signal>
+<signal name="selection-request-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventSelection*">p0</parameter>
+</signal>
+<signal name="selection-notify-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventSelection*">p0</parameter>
+</signal>
+<signal name="selection-received" of-object="GtkWidget" return-type="void" when="last">
+<parameter type="GtkSelectionData*">p0</parameter>
+<parameter type="guint">p1</parameter>
+</signal>
+<signal name="selection-get" of-object="GtkWidget" return-type="void" when="last">
+<parameter type="GtkSelectionData*">p0</parameter>
+<parameter type="guint">p1</parameter>
+<parameter type="guint">p2</parameter>
+</signal>
+<signal name="proximity-in-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventProximity*">p0</parameter>
+</signal>
+<signal name="proximity-out-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventProximity*">p0</parameter>
+</signal>
+<signal name="drag-leave" of-object="GtkWidget" return-type="void" when="last">
+<parameter type="GdkDragContext*">p0</parameter>
+<parameter type="guint">p1</parameter>
+</signal>
+<signal name="drag-begin" of-object="GtkWidget" return-type="void" when="last">
+<parameter type="GdkDragContext*">p0</parameter>
+</signal>
+<signal name="drag-end" of-object="GtkWidget" return-type="void" when="last">
+<parameter type="GdkDragContext*">p0</parameter>
+</signal>
+<signal name="drag-data-delete" of-object="GtkWidget" return-type="void" when="last">
+<parameter type="GdkDragContext*">p0</parameter>
+</signal>
+<signal name="drag-failed" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkDragContext*">p0</parameter>
+<parameter type="GtkDragResult">p1</parameter>
+</signal>
+<signal name="drag-motion" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkDragContext*">p0</parameter>
+<parameter type="gint">p1</parameter>
+<parameter type="gint">p2</parameter>
+<parameter type="guint">p3</parameter>
+</signal>
+<signal name="drag-drop" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkDragContext*">p0</parameter>
+<parameter type="gint">p1</parameter>
+<parameter type="gint">p2</parameter>
+<parameter type="guint">p3</parameter>
+</signal>
+<signal name="drag-data-get" of-object="GtkWidget" return-type="void" when="last">
+<parameter type="GdkDragContext*">p0</parameter>
+<parameter type="GtkSelectionData*">p1</parameter>
+<parameter type="guint">p2</parameter>
+<parameter type="guint">p3</parameter>
+</signal>
+<signal name="drag-data-received" of-object="GtkWidget" return-type="void" when="last">
+<parameter type="GdkDragContext*">p0</parameter>
+<parameter type="gint">p1</parameter>
+<parameter type="gint">p2</parameter>
+<parameter type="GtkSelectionData*">p3</parameter>
+<parameter type="guint">p4</parameter>
+<parameter type="guint">p5</parameter>
+</signal>
+<signal name="visibility-notify-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventVisibility*">p0</parameter>
+</signal>
+<signal name="window-state-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventWindowState*">p0</parameter>
+</signal>
+<signal name="damage-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventExpose*">p0</parameter>
+</signal>
+<signal name="grab-broken-event" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GdkEventGrabBroken*">p0</parameter>
+</signal>
+<signal name="query-tooltip" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="gint">p0</parameter>
+<parameter type="gint">p1</parameter>
+<parameter type="gboolean">p2</parameter>
+<parameter type="GtkTooltip*">p3</parameter>
+</signal>
+<signal name="popup-menu" of-object="GtkWidget" return-type="gboolean" when="last">
+</signal>
+<signal name="show-help" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="GtkWidgetHelpType">p0</parameter>
+</signal>
+<signal name="accel-closures-changed" of-object="GtkWidget" return-type="void" when="unknown">
+</signal>
+<signal name="screen-changed" of-object="GtkWidget" return-type="void" when="last">
+<parameter type="GdkScreen*">p0</parameter>
+</signal>
+<signal name="can-activate-accel" of-object="GtkWidget" return-type="gboolean" when="last">
+<parameter type="guint">p0</parameter>
+</signal>
+<signal name="set-focus" of-object="GtkWindow" return-type="void" when="last">
+<parameter type="GtkWidget*">p0</parameter>
+</signal>
+<signal name="activate-focus" of-object="GtkWindow" return-type="void" when="last">
+</signal>
+<signal name="activate-default" of-object="GtkWindow" return-type="void" when="last">
+</signal>
+<signal name="keys-changed" of-object="GtkWindow" return-type="void" when="first">
+</signal>
+<signal name="enable-debugging" of-object="GtkWindow" return-type="void" when="last">
+<parameter type="gboolean">p0</parameter>
+</signal>
+</gtk-signals>

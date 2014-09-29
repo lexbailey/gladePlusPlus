@@ -106,7 +106,8 @@ const
 
   signalsHeader =
      '#ifndef GLADE_PLUS_PLUS_%s_SIGNALS_INCLUDE'+#10
-    +'#define GLADE_PLUS_PLUS_%s_SIGNALS_INCLUDE';
+    +'#define GLADE_PLUS_PLUS_%s_SIGNALS_INCLUDE'+#10
+    +'#include <gtkmm.h>';
   signalsFooter =
     '#endif' + #10;
 

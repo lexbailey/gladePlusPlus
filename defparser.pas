@@ -5,16 +5,22 @@ unit defParser;
 interface
 
 uses
-  Classes, SysUtils, RegExpr;
+  Classes, SysUtils, DOM,
+  XMLRead;
 
-type TDefParser = class(TObject)
+type
+
+  TSignalSsigniature = record
+    FName: string;
+    FSigniature: string;
+  end;
+
+  TDefParser = class(TObject)
 
     private
-      FSigs: array of string;
+      FSigs: array of TSignalSsigniature;
       function GetSigniature(signalName: string):string;
 
-      function LexDefs(defString: string): TStrings;
-      procedure ParseDefs(defStrings: TStrings);
     public
       property Signiatures[signalName: string] : string read GetSigniature; default;
       constructor Create(fileName: string);
@@ -24,56 +30,74 @@ type TDefParser = class(TObject)
 
 implementation
 
+function DashToUnderscore(s:string):string;
+begin
+  //Replace all dashes with underscores
+  result := StringReplace(s, '-', '_', [rfReplaceAll]);
+end;
+
 function TDefParser.getSigniature(signalName: string): string;
+var i: integer;
 begin
-
-end;
-
-function TDefParser.LexDefs(defString: string): TStrings;
-var comment, identifier, value, whitespace : TRegExpr;
-  output: TStrings;
-  done: boolean = false;
-  defStringNoCom: string;
-begin
-  output := TStringList.Create;
-  comment := TRegExpr.Create; identifier := TRegExpr.Create; value := TRegExpr.Create; whitespace := TRegExpr.Create;
-  comment.Expression:='^;;[^\n]*'; comment.ModifierM := true;
-  identifier.Expression:='^[a-zA-Z_\-]+'; identifier.ModifierM := true;
-  value.Expression:='^"?[a-zA-Z_\- #\.]+"?'; value.ModifierM := true;
-  whitespace.Expression:='^[ \n\t]*'; whitespace.ModifierM := true;
-
-  //Remove all comments
-  defStringNoCom := comment.Replace(defString, '', false);
-
-  //writeln(defStringNoCom);
-
-  //TODO
-  {
-  repeat
-    if comment.Exec(defstring) then
-    begin
-
+  result := '#error signal definition not found for ' + signalName;
+  for i := 0 to length(FSigs)-1 do begin
+    if FSigs[i].FName = signalName then begin
+      result := FSigs[i].FSigniature;
+      break;
     end;
-    done := true;
-  until done;
-   }
-
-  comment.Free; identifier.Free; value.Free; whitespace.Free;
+  end;
 end;
 
-procedure TDefParser.ParseDefs(defStrings: TStrings);
-begin
-  //foo
-end;
 
 constructor TDefParser.create(fileName: string);
-var input: TStrings;
+var inputDoc: TXMLDocument;
+  signals, thisParams: TDOMNodeList;
+  thisSignal: TDOMNode;
+  i, j : integer;
+  ofobject, name, returnType, signiature: string;
+  paramName, paramType: string;
 begin
   inherited create;
-  input := TStringList.Create;
-  input.LoadFromFile(fileName);
-  self.ParseDefs(LexDefs(input.Text));
-  input.Free;
+
+  try
+    //Load the defs file
+    ReadXMLFile(inputDoc, fileName);
+    //Get the signals-node's children
+    signals := inputDoc.DocumentElement.ChildNodes;
+    //Make space
+    setLength(FSigs, signals.Length);
+    //Loop over all signals
+    for i := 0 to signals.Length - 1 do begin
+      //Get current signal
+      thisSignal := signals[i];
+      //Get information
+      ofobject := thisSignal.Attributes.GetNamedItem('of-object').TextContent;
+      name := thisSignal.Attributes.GetNamedItem('name').TextContent;
+      returnType := thisSignal.Attributes.GetNamedItem('return-type').TextContent;
+      //Add name to list:
+      //FSigs[i].FName:= DashToUnderscore(ofobject + '.' + name);
+      FSigs[i].FName:= DashToUnderscore(name);
+      //Get params
+      thisParams := thisSignal.ChildNodes;
+      //generate param list
+      signiature:= returnType + ' %s(';
+      for j := 0 to thisParams.Length - 1 do begin
+        paramType:= thisParams[j].Attributes.GetNamedItem('type').TextContent;
+        paramName:= thisParams[j].TextContent;
+        signiature := signiature + paramType + ' ' + paramName;
+        //Generate a semicolon only if this is not the last item
+        if (j < thisParams.Length - 1) then
+          signiature := signiature + ';';
+      end;
+      signiature := signiature + ');';
+
+      FSigs[i].FSigniature:=signiature;
+
+    end;
+  finally
+    inputDoc.Free;
+  end;
+
 end;
 
 Destructor TDefParser.Destroy;
